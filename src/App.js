@@ -1,8 +1,18 @@
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Layout from "./components/layout/Layout";
+
 function App() {
   return (
-    <div>
-      <h1 className="text-center font-semibold">Principles of UX/UI Design</h1>
-    </div>
+    <Layout>
+      <Routes>
+        <Route path="/" exact element={<Home />} />
+        <Route path="/newshare" element={<NewShare />} />
+        <Route path="/favorites" element={<Favorites />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+      </Layout>
   );
 }
 
