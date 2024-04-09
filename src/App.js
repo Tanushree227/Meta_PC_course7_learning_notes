@@ -12,12 +12,12 @@ function App() {
   return (
     <Layout>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" exact element={<Home />} />
         <Route path="/week1" element={<Week1 />} />
-        <Route path="/week1" element={<Week2 />} />
-        <Route path="/week1" element={<Week3 />} />
-        <Route path="/week1" element={<Week4 />} />
-        <Route path="/week1" element={<Week5 />} />
+        <Route path="/week2" element={<Week2 />} />
+        <Route path="/week3" element={<Week3 />} />
+        <Route path="/week4" element={<Week4 />} />
+        <Route path="/week5" element={<Week5 />} />
       </Routes>
       </Layout>
   );
